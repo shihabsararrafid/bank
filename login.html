@@ -36,6 +36,7 @@
 
     <!-- font awesome link -->
     <script src="https://kit.fontawesome.com/473cf4340f.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/v4-shims.min.css"> -->
     <style>
         .fa-solid {
             color: black;
@@ -43,60 +44,132 @@
             width: 20px;
         }
 
-        body {}
+        ::placeholder {
+            color: blue;
+        }
     </style>
 </head>
 
 
-<body class=" relative">
-    <nav class=>
-        <div>
+<body class=" relative w-full">
+    <header>
+        <nav class=>
+
+            <div class="flex items-center absolute top-0 bg-white w-full  h-24 justify-around ">
+                <div class="nav_img">
+                    <img class="h-24" src="./images/logo-retina1.png" alt="" srcset="">
+                </div>
+                <div class="nav_writing">
+                    <ul class="flex uppercase duration-500  gap-x-7 font-bold ">
+
+                        <li class="text-[#C0CF27]  duration-500 cursor-pointer">Home</li>
+                        <li class="hover:text-[#C0CF27] duration-500 cursor-pointer">How It Works</li>
+                        <li class="hover:text-[#C0CF27]  duration-500 cursor-pointer">Features</li>
+                        <li class="hover:text-[#C0CF27]  duration-500 cursor-pointer">Shortcodes</li>
+                        <li class="hover:text-[#C0CF27]   duration-500 cursor-pointer">Posttype</li>
+                        <li class=" cursor-pointer"><i
+                                class="fa-solid fa-magnifying-glass  duration-500 hover:text-[#C0CF27] hover:font-bold"></i>
+                        </li>
+                        <!-- <i class="fa-solid hover:text-slate-800 fa-magnifying-glass"></i> -->
+
+                        <!-- <li><i class="fa-solid fa-5"></i></li> -->
+                    </ul>
+
+                </div>
+            </div>
+
+
+        </nav>
+    </header>
+
+    <section class="    bg-[url('./images/banner.jpg')] bg-cover h-[130vh]">
+        <!-- <div>
             <img class="w-screen object-cover "
                 src="./images/customer-hand-entering-password-code-laptop-computer-paying-bill-with-credit-card-desk-home-office-internet-digital-marketing-shopping-online-online-payment-digital-technology-concept_33829-573.jpg"
                 alt="">
-        </div>
-        <div class="flex items-center fixed top-0 bg-white w-full  h-24 justify-around ">
-            <div class="nav_img">
-                <img class="h-24" src="./images/logo-retina1.png" alt="" srcset="">
+        </div> -->
+        <div class="absolute  top-44 w-3/4 justify-around flex left-20 ">
+            <div class="uppercase flex items-center">
+                <div class="">
+                    <h1 class="text-2xl text-white font-semibold">15-Minute Transfer</h1>
+                    <h1 class="text-7xl text-white my-8 font-semibold">Getting <br> Money</h1>
+                    <h1 class="text-black text-2xl font-semibold">is now as easy as spending</h1>
+                    <div class="my-8">
+                        <button
+                            class="uppercase font-semibold  duration-500 hover:bg-[#3E467B]  text-white mr-9 bg-[#C0CF27] rounded-full px-9 py-3">how
+                            it
+                            works</button>
+                        <button
+                            class="uppercase font-semibold duration-500 hover:bg-[#C0CF27] text-white mr-9 bg-[#3E467B] rounded-full px-9 py-3">why
+                            payday
+                            loans</button>
+                    </div>
+                </div>
             </div>
-            <div class="nav_writing">
-                <ul class="flex uppercase duration-500  gap-x-7 font-bold ">
+            <div class="w-2/5 rounded-lg   bg-white ">
+                <div>
+                    <h1 class="font-semibold mt-8 text-3xl text-center">How much do you </h1>
+                    <h1 class="text-center font-semibold text-xl">need?</h1>
+                    <h1 class="font-semibold text-center mb-6">You could get upto $10000</h1>
+                    <img class="mx-auto mb-5" src="./images/payments-1.png" alt="">
+                    <div class="fontaccount relative ml-5">
+                        <label for=""><b class="block mx-auto">Account Number:</b></label>
+                        <input type="text"
+                            class="text-center outline-[#3E467B] block my-3 mx-auto rounded-lg h-10 font-bold w-5/6 border-2  border-black"
+                            name="username" placeholder="Your Account Number" id="">
+                        <i class="absolute left-11 top-14 fas fa-user fa-lg"></i>
 
-                    <li class="text-[#C0CF27]  duration-500 cursor-pointer">Home</li>
-                    <li class="hover:text-[#C0CF27] duration-500 cursor-pointer">How It Works</li>
-                    <li class="hover:text-[#C0CF27]  duration-500 cursor-pointer">Features</li>
-                    <li class="hover:text-[#C0CF27]  duration-500 cursor-pointer">Shortcodes</li>
-                    <li class="hover:text-[#C0CF27]   duration-500 cursor-pointer">Posttype</li>
-                    <li class=" cursor-pointer"><i
-                            class="fa-solid fa-magnifying-glass  duration-500 hover:text-[#C0CF27] hover:font-bold"></i>
-                    </li>
-                    <!-- <i class="fa-solid hover:text-slate-800 fa-magnifying-glass"></i> -->
+                    </div>
+                    <div class="fontuser relative ml-5">
+                        <label><b>User Email:</b></label>
+                        <input type="text"
+                            class="text-center outline-[#3E467B] block my-3 mx-auto rounded-lg h-10 font-bold w-5/6 border-2  border-black"
+                            placeholder="Enter Your Email" name="uname" required>
 
-                    <!-- <li><i class="fa-solid fa-5"></i></li> -->
-                </ul>
+                        <i class="absolute top-12 left-11 fas fa-envelope"></i>
+                    </div>
+                    <div class="fontpassword relative ml-5">
+                        <label><b>User Password:</b></label>
+                        <input type="password"
+                            class="text-center outline-[#3E467B] block my-3 mx-auto rounded-lg h-10 font-bold w-5/6 border-2  border-black"
+                            placeholder="Enter Your Password" name="uname" required>
 
+                        <i class="absolute left-11 top-14 fa fa-key fa-lg"></i>
+
+                        <input type="checkbox" checked="checked">
+                        Remember me
+
+                        <button
+                            class="uppercase font-bold text-xl bg-[#3E467B] hover:bg-[#C0CF27] text-white duration-500 block mx-auto border-2 w-11/12 mb-8 mt-6 h-14 rounded-xl">Login</button>
+                    </div>
+                </div>
+                <!-- <div>
+                    <input type="text" name="" id=""
+                        class="outline-black mt-5 h-10 text-center rounded-xl  bg-[#C0CF27] text-black  w-3/4 mx-auto block  "
+                        style="font-family: 'Font Awesome 5 free' ; " placeholder="&#xf162 Your Account Number">
+
+                    <input type="text" name="" id=""
+                        class=" mt-5 h-10 text-center rounded-xl bg-[#C0CF27] normal-case text-white w-3/4 mx-auto block  "
+                        placeholder=" Your Email">
+                    <i class="fa-duotone fa-arrow-down-1-9"></i>
+                    <input type="password" name="" style="font-family: 'Font Awesome 5 free' ; font-weight: 700; "
+                        class=" mt-5 h-10 normal-case text-center rounded-xl bg-[#C0CF27] text-white w-3/4 mx-auto block "
+                        placeholder="&#xf084 Your Password" id="">
+                    <input type="text" style="font-family: 'Font Awesome 5 free' ;  " placeholder="&#xf0e0 Your Name"
+                        name="" id=""
+                        class="border-2 text-center block mx-auto mt-5 h-10 border-black w-3/4 rounded-xl bg-[#C0CF27]">
+
+
+                </div> -->
             </div>
+
+
+
+
+
         </div>
-
-
-    </nav>
-    <section class="absolute top-[200px] uppercase left-16">
-        <h1 class="text-2xl text-white font-semibold">15-Minute Transfer</h1>
-        <h1 class="text-7xl text-white my-8 font-semibold">Getting <br> Money</h1>
-        <h1 class="text-black text-2xl font-semibold">is now as easy as spending</h1>
-        <div class="my-8">
-            <button
-                class="uppercase font-semibold  duration-500 hover:bg-[#3E467B]  text-white mr-9 bg-[#C0CF27] rounded-full px-9 py-3">how
-                it
-                works</button>
-            <button
-                class="uppercase font-semibold duration-500 hover:bg-[#C0CF27] text-white mr-9 bg-[#3E467B] rounded-full px-9 py-3">why
-                payday
-                loans</button>
-        </div>
-
-
     </section>
+
 
 
 </body>
